@@ -11,7 +11,8 @@ while True:
     if choice == 1:
         name = input("Введіть ваше ім'я: ")
         book = input("Введіть назву книги: ")
-        print(f"Книжка {book} видана читачеві {name}")
+        period = int(input("На скільки днів берети книгу?: "))
+        print(f"Книжку {book} видана читачеві {name} на {period} днів")
     elif choice == 2:
         name = input("Введіть ваше ім'я: ")
         book = input("Введіть назву книги: ")

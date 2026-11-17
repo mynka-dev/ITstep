@@ -1,6 +1,7 @@
-#Task1  Користувач вводить число від 1 до 9. Потрібно вивести для цього числа таблицю множення.
+# Task1  Користувач вводить число від 1 до 9. Потрібно вивести для цього числа таблицю множення.
 # Якщо користувач ввів неправильне число то продовжувати запитувати поки не введе правильне.
 import random
+
 # while True:
 #     num = int(input("Введіть число від 1 до 9: "))
 #     if num < 0 or num > 9:
@@ -14,7 +15,7 @@ import random
 #     multiplication = multiply * num
 #     print(f"{num}x{multiply} = {multiplication}")
 
-#Task2
+# Task2
 
 # total = 0
 # count = 0
@@ -30,7 +31,7 @@ import random
 # average_grade = total / count
 # print(f"середня оцінка: {average_grade:.2f}")
 
-#Task3
+# Task3
 
 
 # while True:
@@ -63,7 +64,7 @@ import random
 #     print(f"Результат - {action}")
 
 
-#Task4
+# Task4
 
 # for i in range(1,4):
 #     name = input("Введіть ім'я: ")
@@ -75,7 +76,7 @@ import random
 #     print(f"Учасник №{i}: {name}")
 
 
-#Task5
+# Task5
 tries = 0
 secret_num = random.randint(0, 100)
 while True:

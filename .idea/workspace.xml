@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="13b4dc2c-7bd8-4c5e-ad5b-4c7b66ee16b1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/all/pyproject.toml.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all/requirements.txt.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/all/pizza_order.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,6 +21,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -51,14 +55,17 @@
     "Python.hw.executor": "Run",
     "Python.lesson.executor": "Run",
     "Python.lesson1.executor": "Debug",
+    "Python.library.executor": "Run",
     "Python.main.executor": "Run",
+    "Python.pizza_order.executor": "Run",
     "Python.practice.executor": "Run",
     "Python.practise.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "practice/pizza",
+    "ignore_missing_gitignore": "true",
     "last_opened_file_path": "C:/Users/Влад/Downloads",
     "node.js.detected.package.jshint": "true",
     "node.js.selected.package.jshint": "",
@@ -73,6 +80,8 @@
       <recent name="D:\ITstep\hw1" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\ITstep" />
+      <recent name="D:\ITstep\all\module_git" />
       <recent name="D:\ITstep\all" />
     </key>
   </component>

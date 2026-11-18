@@ -22,7 +22,7 @@ chotyry_syry_amount = 0
 
 
 while True:
-    print("1. Вибрати піццу")
+    print("1. Вибрати піцу")
     print("2. Вихід")
     print("3. Показати все замовлення")
     order = int(input("Що обираете?: "))
@@ -31,7 +31,7 @@ while True:
         print_menu()
         print('Введіть "stop", якщо бажаєте завершити')
         while True:
-            pizza = input("Яку піццу бажаєте замовити?: ")
+            pizza = input("Яку піцу бажаєте замовити?: ")
 
             if pizza == "stop":
                 break
@@ -41,11 +41,17 @@ while True:
                 if count > 0:
                     marharyta_amount += count
                     continue
+                else:
+                    print("\nКількість піци неможлива бути від'ємною")
+                    continue
 
             elif pizza == "Пепероні":
                 count = int(input("Скільки штук бажаєте замовити?: "))
                 if count > 0:
                     peperoni_amount += count
+                    continue
+                else:
+                    print("\nКількість піци неможлива бути від'ємною")
                     continue
 
             elif pizza == "Чотири сири":
@@ -53,14 +59,25 @@ while True:
                 if count > 0:
                     chotyry_syry_amount += count
                     continue
+                else:
+                    print("\nКількість піци неможлива бути від'ємною")
+                    continue
 
             else:
-                print("Назву піцци введено неправильно!")
+                print("Назву піци введено неправильно!")
                 continue
 
     elif order == 2:
         print("Дякуємо що завітали!")
         break
+    pizza_amount = marharyta_amount + peperoni_amount + chotyry_syry_amount
+
+    if pizza_amount > 15:
+        print("До замовлення доступно не більше ніж 15 піц!\n Замовте ще раз")
+        marharyta_amount = 0
+        peperoni_amount = 0
+        chotyry_syry_amount = 0
+        pizza_amount = 0
 
     elif order == 3:
         print(

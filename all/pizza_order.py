@@ -15,6 +15,8 @@ def print_menu():
 MARHARYTA = 150
 PEPERONI = 180
 CHOTYRY_SYRY = 200
+MAX_PIZZAS = 15
+
 
 marharyta_amount = 0
 peperoni_amount = 0
@@ -36,48 +38,32 @@ while True:
             if pizza == "stop":
                 break
 
-            if pizza == "Маргарита":
-                count = int(input("Скільки штук бажаєте замовити?: "))
-                if count > 0:
-                    marharyta_amount += count
-                    continue
-                else:
-                    print("\nКількість піци неможлива бути від'ємною")
-                    continue
-
-            elif pizza == "Пепероні":
-                count = int(input("Скільки штук бажаєте замовити?: "))
-                if count > 0:
-                    peperoni_amount += count
-                    continue
-                else:
-                    print("\nКількість піци неможлива бути від'ємною")
-                    continue
-
-            elif pizza == "Чотири сири":
-                count = int(input("Скільки штук бажаєте замовити?: "))
-                if count > 0:
-                    chotyry_syry_amount += count
-                    continue
-                else:
-                    print("\nКількість піци неможлива бути від'ємною")
-                    continue
-
-            else:
+            if pizza != "Маргарита" and pizza != "Пепероні" and pizza != "Чотири сири":
                 print("Назву піци введено неправильно!")
                 continue
+
+            count = int(input("Скільки штук бажаєте замовити?: "))
+
+            if count <= 0:
+                print("\nКількість піци має бути більшою за нуль!")
+                continue
+
+            current_total = marharyta_amount + peperoni_amount + chotyry_syry_amount
+            if current_total + count > MAX_PIZZAS:
+                print(f"До замовлення доступно не більше ніж {MAX_PIZZAS} піц!")
+                print(f"Ви вже замовили: {current_total}")
+                continue
+
+            if pizza == "Маргарита":
+                marharyta_amount += count
+            elif pizza == "Пепероні":
+                peperoni_amount += count
+            elif pizza == "Чотири сири":
+                chotyry_syry_amount += count
 
     elif order == 2:
         print("Дякуємо що завітали!")
         break
-    pizza_amount = marharyta_amount + peperoni_amount + chotyry_syry_amount
-
-    if pizza_amount > 15:
-        print("До замовлення доступно не більше ніж 15 піц!\n Замовте ще раз")
-        marharyta_amount = 0
-        peperoni_amount = 0
-        chotyry_syry_amount = 0
-        pizza_amount = 0
 
     elif order == 3:
         print(

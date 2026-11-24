@@ -29,19 +29,14 @@
 #
 # count = len(text)
 #
-# has_python = "python" in text.lower()
-# if has_python:
+# if "python" in text.lower():
 #     print("'python' є")
 # else:
 #     print("'python' немає")
 #
 # szh_count = 0
 # for ch in text.lower():
-#     if ch in "s":
-#         szh_count += 1
-#     if ch in "z":
-#         szh_count += 1
-#     if ch in "h":
+#     if ch in "szh":
 #         szh_count += 1
 #
 #
@@ -125,12 +120,13 @@ while True:
 
     if not has_digits:
         print("Пароль повинен містити хоча б одну літеру ")
-        continue
+
     elif not has_numbers:
         print("Пароль повинен містити хоча б одну цифру ")
-        continue
+
     elif len(password) <= 8:
         print("Пароль має бути довшим за 8 символів ")
-        continue
+
     else:
         print("Пароль прийнято")
+        break
